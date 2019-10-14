@@ -4,7 +4,7 @@
   "description": "webpack构建配置",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ./node_modules/.bin/_mocha",
+    "test": "nyc ./node_modules/.bin/_mocha && node test/smoke/index.js",
     "test:smoke": "node test/smoke/index.js",
     "eslint": "eslint ./lib --fix",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
